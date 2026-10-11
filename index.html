@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Menu Restoran Tiga Saudara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="restorann.jpg" alt="Logo Restoran Tiga Saudara">
+            <span>Restoran Tiga Saudara</span>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cara-memesan">Cara Memesan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#pesan">Pesan</a></li>
+            <!-- TAMBAHAN -->
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="page">
+        <h1>Restoran Tiga Saudara</h1>
+        <h2>Selamat Datang</h2>
+
+        <p>
+            Restoran Tiga Saudara menyajikan berbagai hidangan khas Laut
+            yang diolah dengan bahan segar dan resep turun-temurun. Nikmati suasana
+            hangat bersama keluarga sambil menikmati cita rasa autentik lautan Indonesia.
+        </p>
+
+        <h2>Video Promosi</h2>
+        <p>Video singkat suasana dan hidangan Restoran Tiga Saudara:</p>
+
+        <video width="500" controls>
+            <source src="videos/video restoran.mp4" type="video/mp4">
+        </video>
+
+        <h2>Alamat Restoran</h2>
+        <p>
+            Jl. Muchtar No. 45, Depok, Jawa Barat, Indonesia<br>
+            Buka setiap hari, pukul 10.00 - 22.00 WIB<br>
+            Telepon: (021) 123-4567
+        </p>
+    </section>
+
+
+    <section id="menu" class="page">
+        <h2>Daftar Menu</h2>
+
+        <h3>🍽️ Makanan</h3>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nasi Goreng Seafood</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td>Kerang Saus Tiram</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td>Kepiting Saus Padang</td>
+                    <td>Rp 35.000</td>
+                </tr>
+                <tr>
+                    <td>Udang Saus Padang</td>
+                    <td>Rp 20.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🥤 Minuman</h3>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Es Teh Manis</td>
+                    <td>Rp 8.000</td>
+                </tr>
+                <tr>
+                    <td>Es Jeruk</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>Kopi Tubruk</td>
+                    <td>Rp 12.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section id="cara-memesan" class="page">
+        <h2>Cara Memesan</h2>
+
+        <p>Untuk melakukan pemesanan di Restoran Tiga Saudara, ikuti langkah berikut:</p>
+
+        <ol>
+            <li>Pilih makanan dan minuman yang tersedia pada daftar menu.</li>
+            <li>Masukkan jumlah pesanan pada bagian Form Pesan.</li>
+            <li>Isi nama pemesan dan nomor telepon.</li>
+            <li>Hitung total harga sesuai dengan jumlah pesanan.</li>
+            <li>Hubungi kontak Restoran Tiga Saudara untuk mengonfirmasi pesanan.</li>
+            <li>Pesanan akan diproses setelah mendapatkan konfirmasi.</li>
+        </ol>
+    </section>
+
+
+    <section id="kontak" class="page">
+        <h2>Kontak</h2>
+
+        <p>
+            <strong>Hubungi Restoran Tiga Saudara</strong>
+        </p>
+
+        <p>
+            Untuk informasi menu, pemesanan, atau pertanyaan lainnya,
+            silakan hubungi kami melalui kontak berikut:
+        </p>
+
+        <p>
+            Telepon: (021) 123-4567<br>
+            WhatsApp: 0812-3456-7890<br>
+            Email: tigasaudara@gmail.com
+        </p>
+    </section>
+
+
+    <section id="pesan" class="page">
+        <h2>📝 Form Pesan</h2>
+
+        <p>Isi jumlah pesanan pada kolom di bawah ini:</p>
+
+        <table class="menu-table order-table">
+            <thead>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nasi Goreng Seafood</td>
+                    <td>Rp 30.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="nasi_goreng_seafood">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kerang Saus Tiram</td>
+                    <td>Rp 30.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="kerang_saus_tiram">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kepiting Saus Padang</td>
+                    <td>Rp 35.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="kepiting_saus_padang">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Udang Saus Padang</td>
+                    <td>Rp 20.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="udang_saus_padang">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Es Teh Manis</td>
+                    <td>Rp 8.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="es_teh_manis">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Es Jeruk</td>
+                    <td>Rp 10.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="es_jeruk">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kopi Tubruk</td>
+                    <td>Rp 12.000</td>
+                    <td>
+                        <input type="number" min="0" value="0" name="kopi_tubruk">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- TAMBAHAN: ringkasan pesanan otomatis -->
+        <div class="ringkasan">
+            <h3>🧾 Ringkasan Pesanan</h3>
+            <ul id="ringkasanPesan">
+                <li class="kosong">Belum ada pesanan</li>
+            </ul>
+            <div class="total-baris">
+                <span>Total</span>
+                <strong id="totalPesan">Rp 0</strong>
+            </div>
+        </div>
+
+        <table class="menu-table total-table">
+            <tbody>
+                <tr>
+                    <td><strong>Total Harga</strong></td>
+                    <td>
+                        <input type="text" placeholder="Isi total (Rp)" name="total_harga">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Pemesan</strong></td>
+                    <td>
+                        <input type="text" placeholder="Nama Anda" name="nama_pemesan">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>No. Telepon</strong></td>
+                    <td>
+                        <input type="text" placeholder="08xx-xxxx-xxxx" name="telepon_pemesan">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ============ TAMBAHAN: METODE PEMBAYARAN ============ -->
+        <form id="formPesan" method="get" action="#pesan" onsubmit="return cekPesan()">
+
+            <fieldset class="fs-bayar">
+                <legend>💳 Metode Pembayaran</legend>
+
+                <div class="sub-judul">Kartu Debit / Kredit</div>
+                <div class="grid-bayar">
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="Visa" class="radio-kartu" required>
+                        <span>💳 Visa</span>
+                    </label>
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="Mastercard" class="radio-kartu">
+                        <span>💳 Mastercard</span>
+                    </label>
+                </div>
+
+                <div class="sub-judul">ATM &amp; QRIS</div>
+                <div class="grid-bayar">
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="Kartu ATM" class="radio-atm">
+                        <span>🏧 Kartu ATM</span>
+                    </label>
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="QRIS" class="radio-qris">
+                        <span>🔳 QRIS</span>
+                    </label>
+                </div>
+
+                <div class="sub-judul">Dompet Digital</div>
+                <div class="grid-bayar">
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="GoPay" class="radio-dompet">
+                        <span>📱 GoPay</span>
+                    </label>
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="OVO" class="radio-dompet">
+                        <span>📱 OVO</span>
+                    </label>
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="DANA" class="radio-dompet">
+                        <span>📱 DANA</span>
+                    </label>
+                    <label class="opsi-bayar">
+                        <input type="radio" name="metode_bayar" value="ShopeePay" class="radio-dompet">
+                        <span>📱 ShopeePay</span>
+                    </label>
+                </div>
+
+                <span class="blok ket ket-default">Nomor Kartu / Akun</span>
+                <span class="blok ket ket-kartu">Nomor Kartu Debit / Kredit</span>
+                <span class="blok ket ket-atm">Nomor Kartu ATM</span>
+                <span class="blok ket ket-dompet">Nomor HP Akun Dompet Digital</span>
+
+                <input type="text" class="input-nomor" name="nomor_bayar" inputmode="numeric" placeholder="Masukkan nomor kartu / akun" required>
+
+                <div class="info-qris">
+                    <div class="kotak-qr">🔳</div>
+                    <p>
+                        <strong>Pembayaran via QRIS</strong><br>
+                        Scan kode QRIS di kasir Restoran Tiga Saudara saat Anda datang,
+                        lalu bayar dengan aplikasi bank atau dompet digital apa pun.
+                    </p>
+                </div>
+            </fieldset>
+
+            <!-- data dari tabel Pesan ikut terkirim lewat kolom tersembunyi -->
+            <input type="hidden" name="nama_pemesan" id="hNama">
+            <input type="hidden" name="telepon_pemesan" id="hTelp">
+            <input type="hidden" name="pesanan" id="hPesanan">
+            <input type="hidden" name="total_bayar" id="hTotal">
+
+            <button type="submit" class="print-button submit-pesan">✅ Submit Pesanan</button>
+        </form>
+        <!-- ============ AKHIR TAMBAHAN ============ -->
+
+        <p class="order-note">
+            Catatan: klik tombol di bawah untuk menghitung total otomatis dan mencetak hanya menu yang dipesan.
+        </p>
+
+        <button type="button" class="print-button" onclick="siapkanPrint()">
+            🖨️ Print Pesanan
+        </button>
+    </section>
+
+
+    <!-- ===================== TAMBAHAN: FORM BOOKING ===================== -->
+    <section id="booking" class="page">
+        <h2>📅 Form Booking</h2>
+        <p>Lengkapi data dan pilih menu untuk booking tempat:</p>
+
+        <form id="formBooking" method="get" action="#booking" onsubmit="return cekBooking()">
+
+            <!-- 1. Data pemesan -->
+            <fieldset>
+                <legend>👤 Data Pemesan</legend>
+
+                <label class="blok" for="bk_nama">Nama Lengkap</label>
+                <input type="text" id="bk_nama" name="nama_lengkap" placeholder="Nama lengkap Anda" required>
+
+                <label class="blok" for="bk_hp">No. HP</label>
+                <input type="text" id="bk_hp" name="no_hp" placeholder="08xx-xxxx-xxxx" required>
+
+                <label class="blok" for="bk_tgl">Tanggal Booking</label>
+                <input type="date" id="bk_tgl" name="tanggal_booking" required>
+            </fieldset>
+
+            <!-- 2. Pilihan paket -->
+            <fieldset>
+                <legend>🍴 Pilihan Paket</legend>
+                <p>Centang kategori, lalu isi jumlah tiap menu:</p>
+
+                <!-- Makanan -->
+                <div class="grup-menu">
+                    <input type="checkbox" id="kat_makanan" class="kat-cek" name="paket" value="Makanan">
+                    <label for="kat_makanan" class="kat-judul">🍽️ Makanan <small>centang untuk memilih</small></label>
+                    <div class="isi-kat">
+                        <div class="item-menu">
+                            <span class="nm">Nasi Goreng Seafood</span><span class="hg">Rp 30.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Nasi Goreng Seafood" data-harga="30000" name="bk_nasi_goreng">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Kerang Saus Tiram</span><span class="hg">Rp 30.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Kerang Saus Tiram" data-harga="30000" name="bk_kerang">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Kepiting Saus Padang</span><span class="hg">Rp 35.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Kepiting Saus Padang" data-harga="35000" name="bk_kepiting">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Udang Saus Padang</span><span class="hg">Rp 20.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Udang Saus Padang" data-harga="20000" name="bk_udang">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Minuman -->
+                <div class="grup-menu">
+                    <input type="checkbox" id="kat_minuman" class="kat-cek" name="paket" value="Minuman">
+                    <label for="kat_minuman" class="kat-judul">🥤 Minuman <small>centang untuk memilih</small></label>
+                    <div class="isi-kat">
+                        <div class="item-menu">
+                            <span class="nm">Es Teh Manis</span><span class="hg">Rp 8.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Es Teh Manis" data-harga="8000" name="bk_es_teh">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Es Jeruk</span><span class="hg">Rp 10.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Es Jeruk" data-harga="10000" name="bk_es_jeruk">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Kopi Tubruk</span><span class="hg">Rp 12.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Kopi Tubruk" data-harga="12000" name="bk_kopi">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dessert (contoh, silakan ganti sesuai keinginan) -->
+                <div class="grup-menu">
+                    <input type="checkbox" id="kat_dessert" class="kat-cek" name="paket" value="Dessert">
+                    <label for="kat_dessert" class="kat-judul">🍨 Dessert <small>centang untuk memilih</small></label>
+                    <div class="isi-kat">
+                        <div class="item-menu">
+                            <span class="nm">Es Krim Vanilla</span><span class="hg">Rp 12.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Es Krim Vanilla" data-harga="12000" name="bk_es_krim">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Puding Karamel</span><span class="hg">Rp 10.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Puding Karamel" data-harga="10000" name="bk_puding">
+                        </div>
+                        <div class="item-menu">
+                            <span class="nm">Pisang Bakar Coklat</span><span class="hg">Rp 15.000</span>
+                            <input type="number" class="qty" min="0" value="0" data-nama="Pisang Bakar Coklat" data-harga="15000" name="bk_pisang">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 3. Ringkasan otomatis -->
+            <div class="ringkasan">
+                <h3>🧾 Ringkasan Pesanan</h3>
+                <ul id="ringkasanBooking">
+                    <li class="kosong">Belum ada pesanan</li>
+                </ul>
+                <div class="total-baris">
+                    <span>Total</span>
+                    <strong id="totalBooking">Rp 0</strong>
+                </div>
+                <input type="hidden" name="total_bayar" id="inputTotal" value="0">
+            </div>
+
+            <button type="submit" class="print-button">✅ Submit Booking</button>
+        </form>
+    </section>
+    <!-- ===================== AKHIR TAMBAHAN ===================== -->
+
+
+    <script>
+    function siapkanPrint() {
+        const menuItems = [
+            { name: "Nasi Goreng Seafood", harga: 30000, input: "nasi_goreng_seafood" },
+            { name: "Kerang Saus Tiram", harga: 30000, input: "kerang_saus_tiram" },
+            { name: "Kepiting Saus Padang", harga: 35000, input: "kepiting_saus_padang" },
+            { name: "Udang Saus Padang", harga: 20000, input: "udang_saus_padang" },
+            { name: "Es Teh Manis", harga: 8000, input: "es_teh_manis" },
+            { name: "Es Jeruk", harga: 10000, input: "es_jeruk" },
+            { name: "Kopi Tubruk", harga: 12000, input: "kopi_tubruk" }
+        ];
+
+        const rows = document.querySelectorAll('.order-table tbody tr');
+        let total = 0;
+        let adaPesanan = false;
+
+        rows.forEach((row, i) => {
+            const input = row.querySelector('input[type="number"]');
+            const jumlah = parseInt(input.value) || 0;
+
+            if (jumlah > 0) {
+                row.classList.remove('hidden-print-row');
+                total += jumlah * menuItems[i].harga;
+                adaPesanan = true;
+            } else {
+                row.classList.add('hidden-print-row');
+            }
+        });
+
+        if (!adaPesanan) {
+            alert("Silakan isi jumlah pesanan terlebih dahulu sebelum print.");
+            return;
+        }
+
+        document.querySelector('[name="total_harga"]').value =
+            "Rp " + total.toLocaleString('id-ID');
+
+        window.print();
+
+        rows.forEach(row => row.classList.remove('hidden-print-row'));
+    }
+
+    /* ================= TAMBAHAN: HITUNG HARGA OTOMATIS ================= */
+
+    function rp(n) {
+        return "Rp " + n.toLocaleString('id-ID');
+    }
+
+    // Menampilkan daftar ringkasan + total, mengembalikan nilai total
+    function tampilRingkasan(items, idList, idTotal) {
+        let total = 0;
+        let html = '';
+        items.forEach(i => {
+            const sub = i.harga * i.jml;
+            total += sub;
+            html += '<li><span>' + i.nama + ' <small>× ' + i.jml + '</small></span><b>' + rp(sub) + '</b></li>';
+        });
+        document.getElementById(idList).innerHTML = html || '<li class="kosong">Belum ada pesanan</li>';
+        document.getElementById(idTotal).textContent = rp(total);
+        return total;
+    }
+
+    // Form Pesan: hitung setiap jumlah diubah
+    function hitungPesan() {
+        const items = [];
+        document.querySelectorAll('.order-table tbody tr').forEach(row => {
+            const jml = parseInt(row.querySelector('input[type="number"]').value) || 0;
+            if (jml > 0) {
+                items.push({
+                    nama: row.cells[0].textContent.trim(),
+                    harga: parseInt(row.cells[1].textContent.replace(/\D/g, '')) || 0,
+                    jml: jml
+                });
+            }
+        });
+        const total = tampilRingkasan(items, 'ringkasanPesan', 'totalPesan');
+        document.querySelector('[name="total_harga"]').value = total > 0 ? rp(total) : '';
+    }
+
+    // Form Booking: hanya menghitung kategori yang dicentang
+    function hitungBooking() {
+        const items = [];
+        document.querySelectorAll('#booking .kat-cek:checked ~ .isi-kat .qty').forEach(q => {
+            const jml = parseInt(q.value) || 0;
+            if (jml > 0) {
+                items.push({ nama: q.dataset.nama, harga: parseInt(q.dataset.harga), jml: jml });
+            }
+        });
+        const total = tampilRingkasan(items, 'ringkasanBooking', 'totalBooking');
+        document.getElementById('inputTotal').value = total;
+        return total;
+    }
+
+    function cekBooking() {
+        if (hitungBooking() === 0) {
+            alert('Silakan pilih kategori menu dan isi jumlah pesanan terlebih dahulu.');
+            return false;
+        }
+        return true;
+    }
+
+    // Form Pesan: QRIS tidak butuh nomor kartu, jadi kolom nomor tidak wajib diisi
+    function aturNomor() {
+        const qris = document.querySelector('#formPesan .radio-qris').checked;
+        const kolom = document.querySelector('#formPesan .input-nomor');
+        kolom.required = !qris;
+        kolom.disabled = qris;
+    }
+
+    // Form Pesan: validasi + isi kolom tersembunyi sebelum dikirim
+    function cekPesan() {
+        const daftar = [];
+        let total = 0;
+
+        document.querySelectorAll('.order-table tbody tr').forEach(row => {
+            const jml = parseInt(row.querySelector('input[type="number"]').value) || 0;
+            if (jml > 0) {
+                const harga = parseInt(row.cells[1].textContent.replace(/\D/g, '')) || 0;
+                total += jml * harga;
+                daftar.push(row.cells[0].textContent.trim() + ' x' + jml);
+            }
+        });
+
+        if (total === 0) {
+            alert('Silakan isi jumlah pesanan terlebih dahulu.');
+            return false;
+        }
+
+        document.getElementById('hNama').value = document.querySelector('[name="nama_pemesan"]').value;
+        document.getElementById('hTelp').value = document.querySelector('[name="telepon_pemesan"]').value;
+        document.getElementById('hPesanan').value = daftar.join(', ');
+        document.getElementById('hTotal').value = total;
+        return true;
+    }
+
+    document.querySelector('.order-table').addEventListener('input', hitungPesan);
+    document.getElementById('formBooking').addEventListener('input', hitungBooking);
+    document.getElementById('formBooking').addEventListener('change', hitungBooking);
+    document.getElementById('formPesan').addEventListener('change', aturNomor);
+    </script>
+
+</body>
+</html>
